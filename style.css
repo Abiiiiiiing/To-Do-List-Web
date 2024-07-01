@@ -1,0 +1,119 @@
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
+    font-family: 'Poppins', sans-serif;
+}
+
+.todo-wrapper {
+    margin-top: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 40px auto;
+    padding: 25px;
+    font-weight: 250;
+    max-width: 680px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+    text-align: center;
+    color: rgb(31, 31, 31);
+}
+
+.todo-wrapper p {
+    font-style: italic;
+    color: rgb(135, 135, 135);
+    margin: 4px 0;
+    text-align: center
+}
+
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.todo-wrapper form {
+    display: flex;
+}
+
+.todo-wrapper input {
+    width: 80%;
+    margin: 4px auto;
+    padding: 6px 10px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 4px;
+}
+
+.todo-wrapper .pretty-button:hover {
+    border: 1px dashed rgb(44, 44, 44);
+    color: black;
+    cursor: pointer;
+}
+
+.todo-wrapper .pretty-button {
+    margin: 4px 6px;
+    color: white;
+    border-radius: 8px;
+    padding: 6px 10px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+#add-button {
+    display: flex;
+    margin: auto;
+    background-color: rgb(85, 85, 241);
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#clear-completed-button {
+    background-color: rgb(90, 197, 239);
+}
+
+#empty-button {
+    background-color: rgb(241, 83, 83);
+}
+
+#save-button {
+    background-color: rgb(97, 239, 123);
+}
+
+@media only screen and (min-width: 921px) {
+    .todo-wrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 920px) and (min-width: 300px) {
+    .todo-wrapper {
+        width: 60%;
+    }
+}
